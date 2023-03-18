@@ -1,0 +1,421 @@
+body{
+font-family: Arial;
+background-color:#E8F5E2;;
+margin: 0;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.w-80{
+    width: 80%;
+    margin:0 auto;
+}
+.j-btw{
+    justify-content: space-between;
+}
+.j-evenly{
+    justify-content: space-evenly;
+}
+.j-around{
+    justify-content: space-around;
+}
+.align-center{
+    align-items: center;
+}
+nav{
+    border-bottom:1px solid #000000;
+    padding-bottom: 26px;
+    padding-top:30px;
+}
+nav ul{
+    width:80%;
+    margin:0 auto;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding: 0;
+
+}
+nav ul li{
+    font-size: 18px;
+    line-height: 24.55px;
+    font-weight: 500;
+}
+nav .pull{
+margin-right:auto;
+}
+nav .push{
+margin-left: auto;
+}
+nav .push button{
+    display: flex;
+    font-size: 18px;
+    line-height: 24.55px;
+    font-weight: 400;
+    padding:4.5px 20px;
+    gap:10px;
+    background-color: #c6dbbd;
+    border: 1px solid #000000;
+    border-radius: 3px;
+}
+.cover{
+    width:80%;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 145px;
+
+}
+.people{
+    gap:77px;
+}
+.grid-1{
+display: grid;
+margin-top: 52px;
+grid-template-columns: (4, 1fr);
+position: relative;
+}
+.stars{
+    position: absolute;
+    right: 0;
+}
+.vl{
+    
+border-left: #000000 1px solid;
+height: 460px;
+position: absolute;
+left:50%;
+padding-left:145px;
+padding-right: 145px;
+}
+.grid-1 h1{
+    font-weight: 700;
+    font-size:45px;
+    line-height: 61px;
+
+}
+.grid-1 p{
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+}
+
+.grid-2{
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+    margin-top: 52px;
+    align-items: flex-start;
+}
+.grid-2 ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap:26px;
+}
+.grid-2 ul li .numbers{  
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+color: #ffffff;
+background: #000000;
+padding: 7px;
+/*fix needed here, background color or import circle image?
+*/
+border-radius: 100%;
+}
+.grid-2 button{
+font-weight: 700;
+font-size: 18px;
+line-height: 25px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap:10px;
+background:#9bc588;
+border:2px solid #000000;
+box-shadow: 4px 4px 0px #000000;
+border-radius: 3px;
+padding: 10px 20px;
+width: 190px;
+height: 45px;
+}
+
+.main{
+    background-color:#000000;
+    margin-top: 56px;
+}
+.logo-strip{
+    width:80%;
+    margin: auto;
+    padding-top:53.6px;
+    justify-content: space-between;
+    align-items: center;
+    color:#ffffff;
+}
+.product{
+    margin-top:66px;
+    gap:55px;
+    background-color: #ffffff;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    padding-bottom: 64px;
+    
+}
+
+.title{
+    padding-left: 24px;
+}
+.price{
+    background-color: #000000;
+    color:#ffffff;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    height:63px;
+    width: 85px;
+    padding-bottom: 5px;
+    position: absolute;
+    right: 0;
+}
+.product__row{
+    gap:34px;
+}
+.product__card{
+    border: 2px solid #000000;
+    box-shadow: 4px 4px 0px #000000;
+    border-radius: 9px;
+    max-height: 303px;
+    background-color: #ffffff;
+    position: relative;
+}
+.product__card-brogan{
+    border: 2px solid #000000;
+    box-shadow: 4px 4px 0px #000000;
+    border-radius: 9px;
+    position: relative;
+    max-height: 303px;
+    width:430px ;
+    background-color: #ffffff;
+}
+.product__card-brogan img{
+    width:430px;
+    max-height: 240px;
+}
+.product__card-brogan .title{
+    width: 345px;
+    height:63px;
+}
+.product__card-brogan .title p{
+    padding-left: 24px;
+}
+.product__card-brogan .price{
+    width: 85px;
+    padding-bottom: 5px;
+    position: absolute;
+    right: 0;
+}
+
+.product__card-bleu{
+    border: 2px solid #000000;
+    box-shadow: 4px 4px 0px #000000;
+    border-radius: 9px;
+    max-height: 303px;
+    width: 360px;
+    background-color: #ffffff;
+    position: relative;
+}
+.product__card-bleu .title{
+    width: 345px;
+    height:63px;
+}
+.product__card-bleu .title p{
+    padding-left: 24px;
+}
+.product__card-bleu .price{
+    
+    position: absolute;
+    width: 85px;
+    padding-bottom: 5px;
+    bottom: 0;
+    right: 0;
+}
+.product__card-bleu img{
+    width:360px;
+    max-height: 240px;
+}
+
+.product__card-beats {    
+    position: relative;
+    border: 2px solid #000000;
+    box-shadow: 4px 4px 0px #000000;
+    border-radius: 9px;
+    max-height: 303px;
+    width: 342px;
+    background-color: #ffffff;
+    position: relative;
+}
+.product__card-beats img{
+    width:342px;
+    max-height: 240px;
+}
+.product__card-beats .title{
+    width: 345px;
+    height:63px;
+}
+.product__card-beats .price{
+    
+    position: absolute;
+    width: 85px;
+    padding-bottom: 5px;
+    bottom: 0;
+    right: 0;
+}
+.product__card-diamond {    
+    position: relative;
+    border: 2px solid #000000;
+    box-shadow: 4px 4px 0px #000000;
+    border-radius: 9px;
+    max-height: 303px;
+    width: 313px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.product__card-diamond img{
+    width:313px;
+    max-height: 240px;
+}
+.product__card-diamond .title{
+    width: 345px;
+    height:63px;
+}
+.product__card-diamond .price{
+    width: 85px;
+    padding-bottom: 5px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.product__card-shades{
+    border: 2px solid #000000;
+    box-shadow: 4px 4px 0px #000000;
+    border-radius: 9px;
+    position: relative;
+    max-height: 303px;
+    width:477px ;
+    background-color: #ffffff;
+}
+.product__card-shades img{
+    width:477px;
+    max-height: 240px;
+}
+.product__card-shades .title{
+    width: 345px;
+    height:63px;
+}
+.product__card-shades .title p{
+    padding-left: 24px;
+}
+.product__card-shades .price{
+    width: 85px;
+    padding-bottom: 5px;
+    position: absolute;
+    right: 0;
+}
+
+.product__card-mac {    
+    position: relative;
+    border: 2px solid #000000;
+    box-shadow: 4px 4px 0px #000000;
+    border-radius: 9px;
+    max-height: 303px;
+    width: 342px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.product__card-mac img{
+    width:342px;
+    max-height: 240px;
+}
+.product__card-mac .title{
+    width: 345px;
+    height:63px;
+}
+.product__card-mac .price{
+    width: 85px;
+    padding-bottom: 5px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.visibility{
+    display: flex;
+    font-family: 'Nunito';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+gap: 16px;
+width: 80%;
+margin: auto;
+
+text-decoration-line: underline;
+
+
+}
+footer{
+    margin-top: 50px;
+    padding-bottom:76px;
+}
+.footer__content{
+    width:80%;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+}
+
+.col-1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:74px;
+}
+.social{
+    display: flex;
+    gap:25px;
+}
+.col-2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.col-2 ul{
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+.col-2 p{
+    font-family: 'Nunito';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+
+color: #6C7667;
+}
