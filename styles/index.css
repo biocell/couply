@@ -1,6 +1,7 @@
 body{
-font-family: Arial;
-background-color:#E8F5E2;;
+    font-family: 'Nunito', sans-serif;
+background-color:#ffffff;
+font-weight: 400;
 margin: 0;
 }
 .flex-row{
@@ -30,7 +31,8 @@ margin: 0;
 nav{
     border-bottom:1px solid #000000;
     padding-bottom: 26px;
-    padding-top:30px;
+    padding-top:30px;    
+    background-color: #E8F5E2;
 }
 nav ul{
     width:80%;
@@ -61,98 +63,115 @@ nav .push button{
     font-weight: 400;
     padding:4.5px 20px;
     gap:10px;
+    justify-content: center;
+    align-items: center;
     background-color: #c6dbbd;
     border: 1px solid #000000;
     border-radius: 3px;
 }
-.cover{
-    width:80%;
-    margin:0 auto;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 145px;
 
+.cover{
+    width: 100%;
+    background-color: #E8F5E2;
 }
+.cover__content{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    margin: auto;
+}
+.half-1{
+    margin-right: 70px;
+    margin-top: 52px; 
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0;
+    position: relative;
+}
+.half-1 h1{
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 61px;
+    padding-top: 38px;
+    color: #000000;
+    max-width: 503px;
+}
+
+.half-1 p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color:#000000;
+    }
+.stars{
+}
+
 .people{
     gap:77px;
 }
-.grid-1{
-display: grid;
-margin-top: 52px;
-grid-template-columns: (4, 1fr);
-position: relative;
-}
-.stars{
-    position: absolute;
-    right: 0;
-}
-.vl{
-    
-border-left: #000000 1px solid;
-height: 460px;
-position: absolute;
-left:50%;
-padding-left:145px;
-padding-right: 145px;
-}
-.grid-1 h1{
-    font-weight: 700;
-    font-size:45px;
-    line-height: 61px;
-
-}
-.grid-1 p{
-font-weight: 400;
-font-size: 16px;
-line-height: 22px;
-}
-
-.grid-2{
+.vl{    
+    border-left: #000000 1px solid;
+    height: 500px;
+    }
+.half-2{
+    margin-left: 146px;
+    margin-top:67px;
+    max-width: 310px;
     display: flex;
     flex-direction: column;
     gap:16px;
-    margin-top: 52px;
-    align-items: flex-start;
+
+    }
+.half-2__steps{
+        max-width: 310px;
+        display: flex;
+        flex-direction: column;
+        gap:16px;
+    
+        }
+.numbers{
+    background-color: #000000;
+    padding: 5px 10px;
+    border-radius: 50%;
+    color:#ffffff;
+    margin-right: 19px;
 }
-.grid-2 ul{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap:26px;
-}
-.grid-2 ul li .numbers{  
-font-weight: 400;
-font-size: 16px;
-line-height: 22px;
-color: #ffffff;
-background: #000000;
-padding: 7px;
-/*fix needed here, background color or import circle image?
-*/
-border-radius: 100%;
-}
-.grid-2 button{
+.half-2 button{
 font-weight: 700;
 font-size: 18px;
 line-height: 25px;
-display: flex;
-justify-content: space-between;
+font-family: 'Nunito', sans-serif;
+display:flex;
 align-items: center;
-gap:10px;
 background:#9bc588;
 border:2px solid #000000;
 box-shadow: 4px 4px 0px #000000;
 border-radius: 3px;
+gap:10px;
 padding: 10px 20px;
-width: 190px;
+max-width: 203px;
+min-width: 190px;
 height: 45px;
 }
-
-.main{
-    background-color:#000000;
-    margin-top: 56px;
+.half-2 button p{
+    display: inline-block;
+    width: 150px;
 }
-.logo-strip{
+.main{
+    height:1100px;
+    width:100%;
+    background-color: #ffffff;
+}
+.logo-strip__background{
+    background:#000000 no-repeat center center;
+    height: 380px;
+    background-size:cover;
+    width:100%;
+    padding-top: 56px;
+}
+.logo-strip__content{
     width:80%;
     margin: auto;
     padding-top:53.6px;
@@ -160,16 +179,34 @@ height: 45px;
     align-items: center;
     color:#ffffff;
 }
+/*
 .product{
-    margin-top:66px;
-    gap:55px;
-    background-color: #ffffff;
+    margin-top:169px;
+    gap:55px; 
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
     line-height: 30px;
     padding-bottom: 64px;
+    transform: translate(0,-380px);
     
+}
+*/
+.product{
+    display:grid;
+    grid-template-areas: 
+    'brogan brogan bleu beats'
+    'diamond shades shades macbook '
+    ;
+    width: 80%;
+    margin: auto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    padding-bottom: 64px;
+    gap:35px;
+    transform: translate(0,-190px);
 }
 
 .title{
@@ -188,8 +225,15 @@ height: 45px;
     position: absolute;
     right: 0;
 }
-.product__row{
+.product__row1{
+    width: 80%;
+    justify-content: space-between;
+}
+.product__row2{
     gap:34px;
+    
+    width: 80%;
+    justify-content: space-between;
 }
 .product__card{
     border: 2px solid #000000;
@@ -200,12 +244,13 @@ height: 45px;
     position: relative;
 }
 .product__card-brogan{
+    grid-area: brogan;
     border: 2px solid #000000;
     box-shadow: 4px 4px 0px #000000;
     border-radius: 9px;
     position: relative;
     max-height: 303px;
-    width:430px ;
+    max-width:430px ;
     background-color: #ffffff;
 }
 .product__card-brogan img{
@@ -227,6 +272,7 @@ height: 45px;
 }
 
 .product__card-bleu{
+    grid-area: bleu;
     border: 2px solid #000000;
     box-shadow: 4px 4px 0px #000000;
     border-radius: 9px;
@@ -256,6 +302,7 @@ height: 45px;
 }
 
 .product__card-beats {    
+    grid-area: beats;    
     position: relative;
     border: 2px solid #000000;
     box-shadow: 4px 4px 0px #000000;
@@ -281,7 +328,8 @@ height: 45px;
     bottom: 0;
     right: 0;
 }
-.product__card-diamond {    
+.product__card-diamond { 
+    grid-area: diamond;   
     position: relative;
     border: 2px solid #000000;
     box-shadow: 4px 4px 0px #000000;
@@ -309,6 +357,7 @@ height: 45px;
 }
 
 .product__card-shades{
+    grid-area: shades;
     border: 2px solid #000000;
     box-shadow: 4px 4px 0px #000000;
     border-radius: 9px;
@@ -335,7 +384,8 @@ height: 45px;
     right: 0;
 }
 
-.product__card-mac {    
+.product__card-mac {   
+    grid-area:macbook; 
     position: relative;
     border: 2px solid #000000;
     box-shadow: 4px 4px 0px #000000;
@@ -372,14 +422,17 @@ line-height: 22px;
 gap: 16px;
 width: 80%;
 margin: auto;
-
 text-decoration-line: underline;
 
 
 }
 footer{
-    margin-top: 50px;
+    margin-top: 64px;
     padding-bottom:76px;
+    background-color: #E8F5E2;
+    border-top:#000000 solid 1px;
+    padding-top: 48px;
+    
 }
 .footer__content{
     width:80%;
@@ -419,3 +472,93 @@ line-height: 19px;
 
 color: #6C7667;
 }
+.test{
+    color:red;
+    position: relative;
+    top:0;
+}
+
+/* Tablet/ipad Screen */
+
+@media screen and (max-width: 1024px){
+
+    nav{
+
+    }
+    .cover{
+        padding-bottom: 45px;
+    }
+    .cover__content{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .half-1{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .half-1 h1{ 
+    min-width: 693px;
+    padding-right: 5px;
+    }
+    .stars{
+        position: static;
+        right:9em;
+        top:2rem;
+    }
+    .vl{
+        display: none;
+    }
+    
+    .half-2{
+    margin-top:67px;
+    max-width: 100%;
+    margin-left: 0;
+    }
+    .half-2__steps{
+        margin-top:67px;
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        }
+    .half-2__steps .flex-row{
+        flex-direction: column;
+        align-items: flex-start;
+        }
+        .half-2 button{
+            max-width: 13em;
+            height: 45px;
+        }
+        .logo-strip__content{
+          width: 80%;
+        }
+        .logo-strip__content .flex-row{
+            display: none;
+        }
+        .product{
+            display:grid;
+            grid-template-columns: auto;
+            grid-template-areas: 
+            'brogan bleu'
+            'beats shades'
+            'diamond macbook '
+            ;
+            width: 80%;
+            margin: auto;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 30px;
+            padding-bottom: 64px;
+            gap:20px;
+            transform: translate(0,-190px);
+        }
+        .product> section''{
+        }
+        .product__row1{
+            display: grid;
+            grid-template-rows:repeat(auto-fill,minmax);
+        }
+}
+    

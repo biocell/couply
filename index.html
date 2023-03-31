@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Couply</title>
 </head>
 <div>
@@ -19,30 +22,43 @@
         </ul>
     </nav>
     <div class="cover">
-        <div class="grid-1">
+        <div class="cover__content">
+        <div class="half-1">
             <div class="stars"><img src="./images/stars.svg" alt="background-stars" /></div>
+            <div class="half-1__content">    
             <h1>Shopping with coupons, applied automatically!</h1>
-            <p>Used by over 500,000 people</p>
-            <div class="flex-row people">
-                <img src="./images/people-thumbnails.svg" alt="people thumbnails" />
-                <img src="./images/gbolahan.svg" alt="" />
+                <p>Used by over 500,000 people</p>
+                <div class="flex-row people">
+                    <img src="./images/people-thumbnails.svg" alt="people thumbnails" />
+                    <img src="./images/gbolahan.svg" alt="" />
+                </div>
             </div>
-
         </div>
         
         <div class="vl"></div>
-        <div class="grid-2">
-            
-            <ul>
-                <li><span class="numbers">1</span> Download the extension for Chrome or Firefox.</li>
-                <li><span class="numbers">2</span> Visit your favourite online retailers.</li>
-                <li><span class="numbers">3</span> Save! Apply coupons from the toolbar.</li>
-            </ul>
-            <button>Install Extension<img src="./images/Arrow-down.svg" alt="arrow-down"/> </button>
+        <div class="half-2">
+          <div class="half-2__steps">
+            <div class="flex-row align-center">
+                <p class="numbers">1</p>
+                <p>Download the extension for Chrome or Firefox</p>
+            </div>
+            <div class="flex-row align-center">
+                <p class="numbers">2</p>
+                <p>Visit your favourite online retailers.</p>
+            </div>
+            <div class="flex-row align-center">
+                <p class="numbers">3</p>
+                <p>Save! Apply coupons from the toolbar.</p>
+            </div>
+        </div> 
+            <button><p>Install Extension</p><img src="./images/Arrow-down.svg" alt="arrow-down"/> </button>
         </div>
     </div>
-    <div class="main">
-        <div class="logo-strip flex-row">
+    </div>
+  <!--
+      <div class="main">
+        <div class="logo-strip__background">
+        <div class="logo-strip__content flex-row">
             <img src="./images/Amazon.svg" alt="amazon logo" />
             <img src="./images/BestBuy.svg" alt="Best Buy logo" />
             <img src="./images/Shopify.svg" alt="Shopify logo" />
@@ -51,6 +67,7 @@
                 <img src="./images/eye.svg" alt="eye symbol" />
                 <p>View all brands</p>
             </div>
+        </div>
         </div>
         <div class="product flex-column">
             <div class="flex-row w-80 product__row">
@@ -93,13 +110,128 @@
                         <div class="price"><p>$1299</p></div>     
                 </section>
             </div>
-            <!--
+            s
             <div class="flex-row w-80 product__row">
                 <img src="./images/diamond-ring.svg" alt="Two-Tone Diamond Ring" />
                 <img src="./images/cool-shades.svg" alt="Cool Shades" />
                 <img src="./images/macbook.svg" alt="MacBook Pro 2022" />
             </div>
-            --> 
+            <div class="visibility">
+                <img src="./images/eye.svg" alt="visibility" />
+                <p>View all offers</p>
+            </div>
+        </div>
+    </div>
+-->
+    <div class="main">
+        <div class="logo-strip__background">
+        <div class="logo-strip__content flex-row">
+            <img src="./images/Amazon.svg" alt="amazon logo" />
+            <img src="./images/BestBuy.svg" alt="Best Buy logo" />
+            <img src="./images/Shopify.svg" alt="Shopify logo" />
+            <img src="./images/Walmart.svg" alt="Walmart logo" />
+            <div class="flex-row">
+                <img src="./images/eye.svg" alt="eye symbol" />
+                <p>View all brands</p>
+            </div>
+        </div>
+        </div>
+        <!--
+        <div class="product flex-column">
+            <div class="flex-row w-80 product__row1">
+                <section class="product__card-brogan flex-column">
+                    <img src="./images/boots.svg" />
+                    <div class="flex-row ">
+                        <div class="title"><p>Leather Brogan Boots</p></div>
+                        <div  class="price"><p>$59</p></div>     
+                    </div>
+                </section>
+                <section class="product__card-bleu flex-column">
+                    <div class="title"><p>Bleu De Chanel</p></div>
+                    <img src="./images/bleu.svg" />
+                    <div  class="price"><p>$100</p></div>   
+                </section>
+                <section class="product__card-beats flex-column">
+                    <div class="title"><p>Beats by Dre</p></div>
+                    <img src="./images/beats.svg" />
+                    <div  class="price"><p>$250</p></div>   
+                </section>
+
+
+            </div>
+            <div class="flex-row w-80 product__row2">
+                <section class="product__card-diamond flex-column">
+                    <div class="title"><p>Two-Tone Diamond Ring</p></div>
+                    <img src="./images/diamond.svg" />
+                        <div  class="price"><p>$300</p></div>         
+                </section>
+                <section class="product__card-shades flex-column">
+                    <img src="./images/shades.svg" />
+                    <div class="flex-row ">
+                        <div class="title"><p>Cool Shades</p></div>
+                        <div  class="price"><p>$25</p></div>     
+                    </div>
+                </section>
+                <section class="product__card-mac flex-column">
+                    <div class="title"><p>MacBook Pro 2022</p></div>
+                    <img src="./images/mac.svg" />
+                        <div class="price"><p>$1299</p></div>     
+                </section>
+            </div>
+            
+          
+            <div class="flex-row w-80 product__row">
+                <img src="./images/diamond-ring.svg" alt="Two-Tone Diamond Ring" />
+                <img src="./images/cool-shades.svg" alt="Cool Shades" />
+                <img src="./images/macbook.svg" alt="MacBook Pro 2022" />
+            </div>
+  
+            <div class="visibility">
+                <img src="./images/eye.svg" alt="visibility" />
+                <p>View all offers</p>
+            </div>
+        </div>
+    -->
+        <div class="product">
+                <section class="product__card-brogan flex-column">
+                    <img src="./images/boots.svg" />
+                    <div class="flex-row ">
+                        <div class="title"><p>Leather Brogan Boots</p></div>
+                        <div  class="price"><p>$59</p></div>     
+                    </div>
+                </section>
+                <section class="product__card-bleu flex-column">
+                    <div class="title"><p>Bleu De Chanel</p></div>
+                    <img src="./images/bleu.svg" />
+                    <div  class="price"><p>$100</p></div>   
+                </section>
+                <section class="product__card-beats flex-column">
+                    <div class="title"><p>Beats by Dre</p></div>
+                    <img src="./images/beats.svg" />
+                    <div  class="price"><p>$250</p></div>   
+                </section>
+                <section class="product__card-diamond flex-column">
+                    <div class="title"><p>Two-Tone Diamond Ring</p></div>
+                    <img src="./images/diamond.svg" />
+                        <div  class="price"><p>$300</p></div>         
+                </section>
+                <section class="product__card-shades flex-column">
+                    <img src="./images/shades.svg" />
+                    <div class="flex-row ">
+                        <div class="title"><p>Cool Shades</p></div>
+                        <div  class="price"><p>$25</p></div>     
+                    </div>
+                </section>
+                <section class="product__card-mac flex-column">
+                    <div class="title"><p>MacBook Pro 2022</p></div>
+                    <img src="./images/mac.svg" />
+                        <div class="price"><p>$1299</p></div>     
+                </section>
+                <div class="visibility">
+                    <img src="./images/eye.svg" alt="visibility" />
+                    <p>View all offers</p>
+                </div>
+            </div>
             <div class="visibility">
                 <img src="./images/eye.svg" alt="visibility" />
                 <p>View all offers</p>
